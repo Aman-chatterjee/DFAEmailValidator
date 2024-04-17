@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
- <div>
+ <div style="align-items=center">
  <image src="./res/ss1.png"></image>
   <image src="./res/ss2.png"></image>
  </div>
