@@ -6,11 +6,7 @@
 <body>
  <div>
  <image src="./res/ss1.png"></image>
+  <image src="./res/ss2.png"></image>
  </div>
-
- <div>
- <image src="./res/ss2.png"></image>
- </div>
-</body>
 
 </html>
