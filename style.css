@@ -1,0 +1,86 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7; /* Light gray background */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Dark gray */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+#validationResult {
+    min-width: 200px;
+    min-height: 80px;
+    max-width: 400px;
+    max-height: 250px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light gray border */
+    background-color: #f0f0f0; /* Lighter gray background */
+    padding: 15px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+}
+
+#validateEmailBtn, #validateTestBtn {
+    width: auto;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #007bff; /* Blue */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#validateEmailBtn:hover, #validateTestBtn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.valid {
+    color: #4caf50; /* Green */
+}
+
+.invalid {
+    color: #f44336; /* Red */
+}
+
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #666; /* Dark gray text */
+}
