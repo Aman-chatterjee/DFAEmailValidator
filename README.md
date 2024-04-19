@@ -4,7 +4,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
- <image src="https://upload.wikimedia.org/wikipedia/en/thumb/7/73/Lockwood_and_Co_poster.jpg/220px-Lockwood_and_Co_poster.jpg"></image>
-</body>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <img src="./res/ss1.png" alt="Screenshot 1" style="margin-right: 10px;">
+    <img src="./res/ss2.png" alt="Screenshot 2" style="margin-left: 10px;">
+  </div>
 
 </html>
