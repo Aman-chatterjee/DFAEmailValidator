@@ -3,12 +3,14 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    overflow: scroll;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #f7f7f7; /* Light gray background */
 }
+
 
 h1 {
     text-align: center;

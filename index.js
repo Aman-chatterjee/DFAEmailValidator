@@ -19,7 +19,6 @@ function isSpecialChar(c) {
 }
 
 
-
 function isValidEmail(email) {
     const State = {
         START: 'START',
@@ -45,11 +44,12 @@ function isValidEmail(email) {
 
             case State.LOCAL:
                 if (isAlphanumeric(c) || isSpecialChar(c)) {
-                    // Self Loop
+            
                 } else if (c === '.') {
                     state = State.START;
                 } else if (c === '@') {
                     state = State.AT;
+             
                 } else {
                     return false;
                 }
@@ -68,6 +68,7 @@ function isValidEmail(email) {
                     // Self Loop
                 } else if (c === '.') {
                     state = State.TOP_DOMAIN;
+
                 } else {
                     return false;
                 }
@@ -76,8 +77,10 @@ function isValidEmail(email) {
             case State.TOP_DOMAIN:
                 if (isAlpha(c)) {
                     state = State.FINAL;
+ 
                 } else if (isDigit(c) || isSpecialChar(c)) {
                     state = State.DOMAIN_NAME;
+     
                 } else {
                     return false;
                 }
@@ -86,8 +89,10 @@ function isValidEmail(email) {
             case State.FINAL:
                 if (isAlpha(c)) {
                     // Self loop
+
                 } else if (c === '.') {
                     state = State.TOP_DOMAIN;
+        
                 } else {
                     return false;
                 }
@@ -107,6 +112,7 @@ function isValidEmail(email) {
 
 
 
+
 function validateEmail() {
     const emailInput = document.getElementById('emailInput');
     const email = emailInput.value.trim();
@@ -115,8 +121,12 @@ function validateEmail() {
     if (isValidEmail(email)) {
         validationResult.textContent = 'Valid email address.';
         validationResult.className = 'result valid';
+
+        const target = 'diagram.html?email=' + encodeURIComponent(email);
+        window.open(target, '_blank');
+
     } else {
-        validationResult.textContent = 'Invalid email address.';
+        validationResult.textContent = 'Invalid email address.' + encodeURIComponent(email);
         validationResult.className = 'result invalid';
     }
 }
